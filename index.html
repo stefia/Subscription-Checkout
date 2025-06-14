@@ -14,20 +14,20 @@
   <body>
     <div class="container">
       <section class="subscription">
-        <div class="upgrade">
+        <div class="subscription__upgrade">
           <img src="resources/neuralite-logo.svg" alt="Logo" class="upgrade__logo">
           <div class="upgrade__title u-text-xxl u-fw-semibold">Upgrade to Plus</div>
           <div class="upgrade__text u-text-sm u-fw-regular">Upgrade today and take your AI-powered productivity to the next level.</div>
           <div class="form">
             <div class="form__field form__field--full">
-              <label for="name" class="form__label u-text-sm u-fw-medium">First & Last name</label>
-              <input id="name" name="name" type="text" class="form__input ui-input u-text-md u-fw-regular" placeholder="First & Last name">
+              <label for="name" class="form__label u-text-sm u-fw-medium">Billed to</label>
+              <input id="name" name="name" type="text" class="form__input ui-input u-text-md u-fw-regular" placeholder="Enter first & last name">
             </div>
             <div class="form__field form__field--full">
-              <label for="name" class="form__label u-text-sm u-fw-medium">First & Last name</label>
+              <label for="name" class="form__label u-text-sm u-fw-medium">Payment Details</label>
               <div class="form__payment">
                 <div class="form__payment-option form__payment-option--active">
-                  <img src="resources/bank.svg" alt="" class="form__payment-icon" role="img" aria-label="Credit Card">
+                  <img src="resources/atm-card.svg" alt="" class="form__payment-icon" role="img" aria-label="Credit Card">
                   <span class="form__payment-label">Credit Card</span>
                 </div>
                 <div class="form__payment-option">
@@ -35,13 +35,13 @@
                   <span class="form__payment-label">Bank Transfer</span>
                 </div>
                 <div class="form__payment-option">
-                  <img src="resources/bank.svg" alt="" class="form__payment-icon" role="img" aria-label="Credit Card">
+                  <img src="resources/point-card.svg" alt="" class="form__payment-icon" role="img" aria-label="Credit Card">
                   <span class="form__payment-label">Points</span>
                 </div>
               </div>
             </div>
             <div class="form__field form__field--full">
-              <label for="email-adress" class="form__label u-text-sm u-fw-medium">Enter email address</label>
+              <label for="email-adress" class="form__label u-text-sm u-fw-medium">Email address</label>
               <input id="email-adress" name="email-adress" type="email" class="form__input ui-input u-text-md u-fw-regular" placeholder="Enter email address">
             </div>
             <div class="form__field form__field--half">
@@ -62,7 +62,6 @@
         </div>
         <div class="subscription__summary">
           <div class="summary__header u-text-lg u-fw-semibold">Starter Plan</div>
-      
           <div class="summary__plans">
             <label class="summary__plan summary__plan--active">
               <input type="radio" name="plan" checked class="summary__plan-input">
@@ -85,11 +84,8 @@
             <span class="u-text-xl u-fw-semibold">$20 / Month</span>
           </div>
           <div class="summary__note u-text-xs u-fw-regular">
-            This environment is for demonstration purposes only. Please refrain from entering any actual sensitive data.
-          </div>
-      
-          <div class="summary__image">
-            <img src="resources/Checkout-background@2x.png" alt="3D Box">
+            <p>This environment is for demonstration purposes only. Please refrain from entering any actual sensitive data.</p>
+            <div class="summary__image"><img src="resources/Checkout-background@2x.png" alt="3D Box"></div>
           </div>
         </div>
       </section>

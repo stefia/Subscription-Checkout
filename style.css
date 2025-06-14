@@ -13,7 +13,7 @@ body {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    padding-inline: 40px
+    padding: 0 20px 0 40px;
 }
 :root {
     --font-weight-light: 300;
@@ -88,6 +88,7 @@ body {
 .form__field--actions {
     flex-direction: row;   
     gap: 16px;
+    margin-top: 16px;
 }
 .form__submit--grow {
     flex: 1 1 auto;         
@@ -117,7 +118,6 @@ body {
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s;
 }
-
 .form__payment-option--active {
     border-color: var(--color-primary);
     background-color: #8560cf2a;
@@ -141,14 +141,16 @@ body {
     gap: 72px; 
     padding-top: 40px;
     align-items: stretch;
+    margin-bottom: 50px;
 }
 .subscription__summary {
     flex: 1 1 auto;           
     display: flex;
     flex-direction: column;
-    gap: 24px;   
+    gap: 12px;   
     background-color: var(--color-bg);  
     padding: 0 32px; 
+    margin-left: 20px;
     border-radius: 10px;  
     overflow: hidden;      
 }
@@ -190,17 +192,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-md) 0;
 }
 .summary__note {
     color: var(--color-dark);
     line-height: 1.4;
 }
 .summary__image { 
+    display: block;
     margin-right: -32px;
 }
 .summary__image img {
-    display: block;
     width: 100%;
 }
 .summary__plan::before {
@@ -231,12 +232,19 @@ body {
 }
 hr {
     height: 1px;
+    margin: 20px 0;
     border: none;
     background-color: var(--color-lightest);
 }
 @media (max-width: 640px) {
+    .container {
+        padding: 0 10px;
+    }
     .subscription {
         flex-direction: column-reverse;
+    }
+    .subscription__summary {
+        margin-left: 0;
     }
     .summary__image {
         display: none;
