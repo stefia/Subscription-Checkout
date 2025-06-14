@@ -124,6 +124,7 @@ body {
 }
 .form__submit {
     border: none;
+    padding: 18px;
 }
 .form__submit--primary {
     color: var(--color-white);
@@ -143,7 +144,7 @@ body {
     align-items: stretch;
     margin-bottom: 50px;
 }
-.subscription__summary {
+.summary {
     flex: 1 1 auto;           
     display: flex;
     flex-direction: column;
@@ -241,9 +242,10 @@ hr {
         padding: 0 10px;
     }
     .subscription {
+        padding-top: 20px;
         flex-direction: column-reverse;
     }
-    .subscription__summary {
+    .summary {
         margin-left: 0;
     }
     .summary__image {
