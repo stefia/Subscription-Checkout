@@ -62,7 +62,7 @@ body {
 
 
 .upgrade__title {
-    margin-bottom: 16px;
+    margin: 16px 0 12px;
 }
 .upgrade__text {
     margin: 12px 0 32px;
@@ -131,7 +131,7 @@ body {
 }
 .form__submit--secondary {
     color: var(--color-darkest);
-    background-color: var(--color-lightest);
+    background-color: var(--color-bg);
 }
 
 
@@ -139,7 +139,7 @@ body {
 .subscription {
     display: flex;
     gap: 72px; 
-    padding-top: 100px;
+    padding-top: 40px;
     align-items: stretch;
 }
 .subscription__summary {
@@ -233,4 +233,15 @@ hr {
     height: 1px;
     border: none;
     background-color: var(--color-lightest);
+}
+@media (max-width: 640px) {
+    .subscription {
+        flex-direction: column-reverse;
+    }
+    .summary__image {
+        display: none;
+    }
+    .summary__note {
+        margin-bottom: 10px;
+    }
 }
